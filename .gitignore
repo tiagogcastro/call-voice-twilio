@@ -7,6 +7,8 @@ yarn-error.log*
 firebase-debug.log*
 firebase-debug.*.log*
 
+node_modules
+
 build
 lib
 
@@ -76,4 +78,3 @@ lib/**/*.js.map
 typings/
 
 # Node.js dependency directory
-node_modules/
