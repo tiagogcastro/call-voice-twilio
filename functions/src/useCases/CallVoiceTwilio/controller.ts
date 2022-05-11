@@ -13,13 +13,6 @@ export class Controller {
 
     let env_optional_phone_number = process.env.TWILIO_PHONE_NUMBER_OPTIONAL;
 
-    console.log({
-      env_optional_phone_number,
-      from,
-      to, 
-      twiml
-    });
-    
     if(!to) {
       return response.json({
         status: 'error',
@@ -44,7 +37,7 @@ export class Controller {
 
     try {
       const call_response = await twilio_client.calls.create({
-        url: twiml,
+        twiml,
         to,
         from
       });
