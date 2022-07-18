@@ -1,12 +1,14 @@
 {
   "compilerOptions": {
-    "module": "commonjs",
+    "module": "CommonJS",
     "noImplicitReturns": false,
     "noUnusedLocals": false,
     "outDir": "./functions/lib",
     "sourceMap": false,
     "strict": false,
-    "target": "es2017"
+    "target": "es2017",
+    "esModuleInterop": true,
+    "moduleResolution": "Node16",
   },
   "compileOnSave": true,
   "include": [

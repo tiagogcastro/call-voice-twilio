@@ -1,4 +1,6 @@
 import twilio = require('twilio');
+import dotenv = require('dotenv');
+dotenv.config();
 
 const twilio_account_sid = process.env.TWILIO_ACCOUNT_SID;
 const twilio_auth_token = process.env.TWILIO_AUTH_TOKEN;
